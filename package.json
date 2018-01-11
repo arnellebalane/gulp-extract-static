@@ -1,0 +1,24 @@
+{
+  "name": "gulp-extract-static",
+  "version": "0.0.0",
+  "description": "Gulp plugin for extracting static resource paths from templates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arnelle Balane <arnellebalane@gmail.com> (https://arnellebalane.com/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnellebalane/gulp-extract-static.git"
+  },
+  "keywords": [
+    "gulp",
+    "extract",
+    "static"
+  ],
+  "bugs": {
+    "url": "https://github.com/arnellebalane/gulp-extract-static/issues"
+  },
+  "homepage": "https://github.com/arnellebalane/gulp-extract-static#readme"
+}
