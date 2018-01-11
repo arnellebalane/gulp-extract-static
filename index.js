@@ -1,3 +1,4 @@
+const path = require('path');
 const through2 = require('through2');
 const vinyl = require('vinyl-fs');
 
@@ -14,7 +15,8 @@ module.exports = (options={}) => {
 
         let match;
         while (match = pattern.exec(contents)) {
-            const transformed = transform(match, options);
+            const matchOptions = Object.assign(options, { dirname: path.dirname(chunk.path) });
+            const transformed = transform(match, matchOptions);
             if (transformed) {
                 matches.push(transformed);
             }
