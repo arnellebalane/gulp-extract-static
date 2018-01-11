@@ -4,6 +4,7 @@
   "description": "Gulp plugin for extracting static resource paths from templates",
   "main": "index.js",
   "scripts": {
+    "commit": "git-cz",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Arnelle Balane <arnellebalane@gmail.com> (https://arnellebalane.com/)",
@@ -20,5 +21,14 @@
   "bugs": {
     "url": "https://github.com/arnellebalane/gulp-extract-static/issues"
   },
-  "homepage": "https://github.com/arnellebalane/gulp-extract-static#readme"
+  "homepage": "https://github.com/arnellebalane/gulp-extract-static#readme",
+  "devDependencies": {
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
 }
