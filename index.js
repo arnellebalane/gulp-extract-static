@@ -22,6 +22,10 @@ module.exports = (options={}) => {
             }
         }
 
+        if (matches.length === 0) {
+            return callback(null);
+        }
+
         vinyl.src(matches, {
             base: baseUrl,
             allowEmpty: true
