@@ -1,6 +1,6 @@
 {
   "name": "gulp-extract-static",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Gulp plugin for extracting static resource paths from templates",
   "main": "index.js",
   "scripts": {
