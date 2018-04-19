@@ -15,10 +15,13 @@ module.exports = (options={}) => {
 
         let match;
         while (match = pattern.exec(contents)) {
-            const matchOptions = Object.assign(options, { dirname: path.dirname(chunk.path) });
-            const transformed = transform(match, matchOptions);
-            if (transformed) {
-                matches.push(transformed);
+            const dataUris = Array.from(match).slice(1).filter(group => group.startsWith('data:'));
+            if (dataUris.length === 0) {
+                const matchOptions = Object.assign(options, { dirname: path.dirname(chunk.path) });
+                const transformed = transform(match, matchOptions);
+                if (transformed) {
+                    matches.push(transformed);
+                }
             }
         }
 
